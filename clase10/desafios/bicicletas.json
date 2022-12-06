@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "marca" : "Olmo pep",
+        "modelo" :  "Regal 2",
+        "rodado" : 29,
+        "anio" : 2022,
+        "color": "roja",
+        "peso" : 16,
+        "tipo" : "Montañera",
+        "precio" : 120000,
+        "vendida" : "si"
+    },
+    {
+        "id" : 2,
+        "marca" : "Olmo Don pepe",
+        "modelo" :  "Regal 3",
+        "rodado" : 29,
+        "anio" : 2022,
+        "color": "roja",
+        "peso" : 16,
+        "tipo" : "Montañera",
+        "precio" : 120000,
+        "vendida" : "si"
+    },
+    {
+        "id" : 3,
+        "marca" : "Olmo",
+        "modelo" :  "Regal",
+        "rodado" : 29,
+        "anio" : 2022,
+        "color": "roja",
+        "peso" : 16,
+        "tipo" : "Montañera",
+        "precio" : 120000,
+        "vendida" : "no"
+    }
+]
