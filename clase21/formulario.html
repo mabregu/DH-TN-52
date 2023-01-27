@@ -1,0 +1,36 @@
+<form action="/register">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" placeholder="Ingresa aqui tu nombre" id="name" required />
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" placeholder="Ingresa aqui tu apellido" id="apellido" required />
+    <br>
+    <label for="usuario">Usuario</label>
+    <input type="text" name="usuario" placeholder="Ingresa aqui tu usuario" id="usuario" required />
+    <br>
+    <label for="password">Password</label>
+    <input type="pasword" name="password" placeholder="Ingresa aqui tu password" id="password" required />
+    <br>
+
+    <label for="genre">Genero</label><br>
+    <input type="radio" name="genre" value="masculino">Masculino
+    <input type="radio" name="genre" value="femenino">Femenino
+    <input type="radio" name="genre" value="otro">Otro
+    <br>
+    <select name="genre_select">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+        <option value="otro">Otro</option>
+    </select>
+    <br>
+    <label for="lengaujes">Lengaujes</label><br>
+    <input type="checkbox" name="lengauje" value="1">C#
+    <input type="checkbox" name="lengauje" value="2">C++
+    <input type="checkbox" name="lengauje" value="3">Python
+    <input type="checkbox" name="lengauje" value="4">JS
+    <br>
+    <input type="file" name="image" multiple>
+    <br>
+    <textarea name="" id="" cols="2" rows="2"></textarea>
+    <button type="submit">Send</button>
+</form>
