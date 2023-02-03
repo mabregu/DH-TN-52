@@ -40,6 +40,12 @@ const mainController = {
             title: 'detalle menu',
             menu
         });
+    },
+    deleteMenu: function (req, res, next) {
+        // Usando la funcion filter de los arrays
+        // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter
+        menuList = menuList.filter(celular => celular.id != req.params.id);
+        res.redirect('/');
     }
 }
 
