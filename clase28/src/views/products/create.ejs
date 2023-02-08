@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Crear auto</h1>
+
+<form method="post" action="/products/create">
+    <label for="name">Nombre</label>
+    <input type="text" name="name">
+    <label for="year">Año</label>
+    <input type="text" name="year">
+
+    <button type="submit">Crear</button>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

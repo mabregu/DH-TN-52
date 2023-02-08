@@ -23,10 +23,26 @@ const productController = {
         });
     },
     create: (req, res) => {
-        // TODO: implentar metodo
+        res.render('products/create', {
+            title: 'Nuevo auto'
+        });
     },
     store: (req, res) => {
-        // TODO: implentar metodo
+        let autos = productController.getCars();
+        let newAuto = {
+            "id": Date.now(),
+            "name": req.body.name || "Sin nombre",
+            "km": req.body.km || 0,
+            "year": req.body.year || 0,
+            "price": req.body.price || 0,
+            "available": false
+        }
+        
+        autos.push(newAuto);
+        
+        fs.writeFileSync(autosPath, JSON.stringify(autos, null, ' '));
+        
+        res.redirect('/products');
     },
     edit: (req, res) => {
         let autoId = req.params.id;
@@ -40,10 +56,11 @@ const productController = {
     update: (req, res) => {
         let autoId = req.params.id;
         let autos = productController.getCars();
-        
+
         autos.forEach((auto, index) => {
             if (auto.id == autoId) {        
-                auto.name = req.body.name;
+                // auto.name = Talon
+                auto.name = req.body.name; // auto.name = Talon de aquiles
                 auto.year = req.body.year;
 
                 autos[index] = auto;
@@ -55,10 +72,24 @@ const productController = {
         res.redirect('/products');
     },
     delete: (req, res) => {
-        // TODO: implentar metodo
+        let autoId = req.params.id;
+        let auto = productController.getCars().find(auto => auto.id == autoId);
+        
+        res.render('products/delete', {
+            title: 'Eliminar auto',
+            car: auto
+        });
     },
     destroy: (req, res) => {
-        // TODO: implentar metodo
+        let autoId = req.params.id;
+        let autos = productController.getCars();// array
+        
+        let newAutos = autos.filter(auto => auto.id != autoId); // nuevo
+
+        // Modifica el archivo
+        fs.writeFileSync(autosPath, JSON.stringify(newAutos, null, ' '));
+        
+        res.redirect('/products');
     }
 };
 

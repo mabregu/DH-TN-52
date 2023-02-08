@@ -5,8 +5,6 @@ const productController = require('../controller/productController');
 
 // Listado de productso
 router.get('/', productController.index);
-// ver producto
-router.get('/:id', productController.show);
 // creacion de producto
 router.get('/create', productController.create);
 router.post('/create', productController.store);
@@ -16,6 +14,8 @@ router.put('/edit/:id', productController.update);
 // eliminar producto
 router.get('/delete/:id', productController.delete);
 router.delete('/delete/:id', productController.destroy);
+// ver producto
+router.get('/:id', productController.show);
 
 
 module.exports = router;

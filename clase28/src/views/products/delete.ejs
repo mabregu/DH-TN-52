@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Eliminar auto</h1>
+
+<h2>¿Estas seguro que queres eliminar el auto?</h2>
+
+<form method="post" action="/products/delete/<%= car.id %> ?_method=DELETE">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" value="<%= car.name %> " disabled>
+    <label for="year">Año</label>
+    <input type="text" name="year" value="<%= car.year %>" >
+
+    <button type="submit">Eliminar</button>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

@@ -1,21 +1,5 @@
 [
  {
-  "id": 1,
-  "name": "Sunfire asdas",
-  "km": 4126446,
-  "year": "1998",
-  "price": 186512,
-  "available": false
- },
- {
-  "id": 2,
-  "name": "Talon",
-  "km": 6205728,
-  "year": "1992",
-  "price": 123925,
-  "available": false
- },
- {
   "id": 3,
   "name": "Liberty",
   "km": 5425302,
@@ -38,14 +22,6 @@
   "year": 2007,
   "price": 194961,
   "available": false
- },
- {
-  "id": 6,
-  "name": "Tempest",
-  "km": 8195452,
-  "year": 1967,
-  "price": 120095,
-  "available": true
  },
  {
   "id": 7,
@@ -141,22 +117,6 @@
   "km": 4694786,
   "year": 2003,
   "price": 119562,
-  "available": false
- },
- {
-  "id": 19,
-  "name": "Milan",
-  "km": 7432992,
-  "year": 2010,
-  "price": 121383,
-  "available": false
- },
- {
-  "id": 20,
-  "name": "Explorer",
-  "km": 5554027,
-  "year": 2008,
-  "price": 115867,
   "available": false
  }
 ]
