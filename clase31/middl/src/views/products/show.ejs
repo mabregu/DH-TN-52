@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>El auto <%= car.name %></h1>
+
+<strong>
+    Año del auto: <%= car.year %>
+</strong>
+
+<% if (car.images) { %>
+    <% if (Array.isArray(car.images)) { %>
+        <% car.images.forEach(image => { %>
+            <img width="40" src="/img/products/<%= image %>" alt="<%= image %>">
+        <% }) %>
+    <% } else { %>
+        <img width="50" src="/img/products/<%= car.images %>" alt="">
+    <% } %>
+<% } else { %>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peu404vitfr.jpg" alt="">
+<% } %>
+
+<%- include('../partials/footer.ejs') %>

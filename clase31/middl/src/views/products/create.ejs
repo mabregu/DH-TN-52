@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Crear auto</h1>
+
+<form method="post" action="/products/create" enctype="multipart/form-data">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" value="<%= locals.oldBody ? locals.oldBody.name : '' %>"
+    <% if (locals.errors && errors.name) { %>
+        <p style="color: red"><%= errors.name.msg %></p>
+    <% } %>
+    <label for="year">Año</label>
+    <input type="text" name="year">
+    <% if (locals.errors && errors.year) { %>
+        <p style="color: red"><%= errors.year.msg %></p>
+    <% } %>
+    <br>
+    <input type="file" name="images" id="images" multiple>
+    <br>
+
+
+    <button type="submit">Crear</button>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

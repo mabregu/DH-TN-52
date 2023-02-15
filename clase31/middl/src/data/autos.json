@@ -1,0 +1,173 @@
+[
+ {
+  "id": 3,
+  "name": "Liberty",
+  "km": 5425302,
+  "year": 2003,
+  "price": 170766,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 4,
+  "name": "Impala",
+  "km": 2075360,
+  "year": 2007,
+  "price": 198126,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 5,
+  "name": "Commander",
+  "km": 6789321,
+  "year": 2007,
+  "price": 194961,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 7,
+  "name": "Tiburon",
+  "km": 8711198,
+  "year": 2008,
+  "price": 157238,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 8,
+  "name": "5 Series",
+  "km": 6646839,
+  "year": 2000,
+  "price": 109158,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 9,
+  "name": "Grand Prix",
+  "km": 4795813,
+  "year": 1962,
+  "price": 126966,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 10,
+  "name": "Tahoe",
+  "km": 910954,
+  "year": 1997,
+  "price": 142070,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 11,
+  "name": "A3",
+  "km": 9782698,
+  "year": 2007,
+  "price": 103681,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 12,
+  "name": "Discovery",
+  "km": 3581812,
+  "year": 1999,
+  "price": 157604,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 13,
+  "name": "Previa",
+  "km": 5374219,
+  "year": 1993,
+  "price": 105197,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 14,
+  "name": "Swift",
+  "km": 1919575,
+  "year": 1992,
+  "price": 190770,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 15,
+  "name": "Cayenne",
+  "km": 8771187,
+  "year": 2010,
+  "price": 182898,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 16,
+  "name": "xB",
+  "km": 5846610,
+  "year": 2008,
+  "price": 170430,
+  "available": true,
+  "images": ""
+ },
+ {
+  "id": 17,
+  "name": "Rio",
+  "km": 825424,
+  "year": 2001,
+  "price": 128598,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 18,
+  "name": "Ion",
+  "km": 4694786,
+  "year": 2003,
+  "price": 119562,
+  "available": false,
+  "images": ""
+ },
+ {
+  "id": 1675984665722,
+  "name": "Vino",
+  "km": 0,
+  "year": "1990",
+  "price": 0,
+  "available": false,
+  "images": [
+   {
+    "id": 1,
+    "name": "product-1675984665713.jpg"
+   }
+  ]
+ },
+ {
+  "id": 1675987408046,
+  "name": "Mati",
+  "km": 0,
+  "year": "1994",
+  "price": 0,
+  "available": false,
+  "images": "product-1675987407860.png"
+ },
+ {
+  "id": 1675988495322,
+  "name": "MI array de autitos",
+  "km": 0,
+  "year": "2008",
+  "price": 0,
+  "available": false,
+  "images": [
+   "product-1675988495153.jpg",
+   "product-1675988495157.png",
+   "product-1675988495306.png"
+  ]
+ }
+]
