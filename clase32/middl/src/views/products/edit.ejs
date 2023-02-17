@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Editando auto</h1>
+
+<form method="post" action="/products/edit/<%= car.id %>?_method=PUT">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" value="<%= car.name %>">
+    <label for="year">Año</label>
+    <input type="text" name="year" value="<%= car.year %>">
+
+    <button type="submit">Editar</button>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

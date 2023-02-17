@@ -1,0 +1,18 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Listado de productos</h1>
+<a href="/products/create">Crear auto</a>
+<ul>
+    <% carsList.forEach(auto => { %>
+        <li>
+            <a href="/products/<%= auto.id %>"><%= auto.name %></a>
+            -
+            <a href="/products/edit/<%= auto.id %>">Editar</a>
+            -
+            <a href="/products/delete/<%= auto.id %>">Eliminar</a>
+        </li>
+    <% }) %>
+</ul>
+
+
+<%- include('../partials/footer.ejs') %>
