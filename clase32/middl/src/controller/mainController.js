@@ -18,9 +18,20 @@ const mainController = {
         
         if (user) {
             req.session.userLogged = user;
-            
+            if (req.body.rememberme) {
+                res.cookie(
+                    'userLogged',
+                    user,
+                    { maxAge: 1000 * 60 * 60 * 24 } // 1 dia
+                );
+            }
             res.redirect('/profile');
         }
+    },
+    logout: (req, res) => {
+        req.session.destroy();
+        res.clearCookie('userLogged')
+        return res.redirect('/');
     },
     profile: (req, res) => {
         res.render('user/profile', {

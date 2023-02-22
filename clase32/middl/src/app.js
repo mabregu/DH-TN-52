@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const methodOverride = require('method-override');
+
+const userSessionMiddleware = require('./middlewares/userSessionMiddleware');
 
 const PORT = process.env.PORT || 3000;
 
@@ -16,6 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cookieParser());
 app.use(session({
     secret: 'secret',
     resave: false,
@@ -24,7 +28,7 @@ app.use(session({
 }))
 
 app.use(methodOverride('_method'))
-
+app.use(userSessionMiddleware);
 app.use(mainRoutes);
 app.use('/products', productRoutes);
 // app.use((req, res) => {

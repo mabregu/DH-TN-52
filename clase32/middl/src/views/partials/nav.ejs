@@ -6,8 +6,13 @@
         <li>
             <a href="/products">Productos</a>
         </li>
-        <li>
-            <a href="/login">Login</a>
+        <% if (locals.userLogged) { %>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+        <% } else { %>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        <% } %>
         </li>
     </ul>
 </nav>
