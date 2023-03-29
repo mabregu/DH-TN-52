@@ -1,0 +1,19 @@
+# Migrations
+npx sequelize-cli model:generate --name Category --attributes name:string,description:text
+npx sequelize-cli model:generate --name File --attributes name:string,type:string,size:integer,extension:string,path:string
+npx sequelize-cli model:generate --name Product --attributes name:string,description:text,price:decimal,stock:integer,categoryId:integer,brandId:integer,providerId:integer,productStateId:integer
+npx sequelize-cli model:generate --name FileProduct --attributes productId:integer,fileId:integer
+# run migrations
+npx sequelize-cli db:migrate
+# Rollback migrations
+npx sequelize-cli db:migrate:undo
+
+# Seeds
+npx sequelize-cli seed:generate --name categories
+npx sequelize-cli seed:generate --name files
+npx sequelize-cli seed:generate --name products
+
+# run seeds
+npx sequelize-cli db:seed:all
+# Rollback seeds
+
