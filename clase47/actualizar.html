@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar post</title>
+</head>
+<body>
+    <h1>Actualizar post 😎</h1>
+
+    <form>
+        <input type="text" name="title" id="title" placeholder="titulo"><br>
+        <textarea cols="10" rows="5" name="body" id="body" placeholder="cuerpo"></textarea><br>
+        <input type="number" name="userId" id="userId" placeholder="user id">
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <script src="crud.js"></script>
+    <script>
+        const form = document.querySelector('form');
+        const url = new URLSearchParams(window.location.search);
+        const id = url.get('id')
+
+        if (!id) window.location.href = 'index.html';
+
+        form.addEventListener('submit', (evt) => {
+            evt.preventDefault();
+            const data = JSON.stringify({
+                id,
+                title: form.title.value,
+                body: form.body.value,
+                userId: form.userId.value,
+            });
+            putData(API + '/' + id, data)
+                .then(data => {
+                    console.log(data);
+                    location.href = "index.html"
+                })
+                .catch(error => console.error(error))
+            ;
+        });
+    </script>
+</body>
+</html>
