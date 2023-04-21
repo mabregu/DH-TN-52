@@ -1,0 +1,8 @@
+carrito
+
+1. deberiamos poder tener un array de productos.
+2. vamos a tener 2 html para prod y carrito
+3. btn para addtoCart
+4. los js con las funcionalidades
+5. producto = { id, title, price, qty }
+6. btn para eliminar prod del carrito
